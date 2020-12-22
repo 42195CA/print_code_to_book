@@ -1,0 +1,35 @@
+\documentclass[letterpaper,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{listings,lstautogobble}
+\usepackage{xcolor}
+
+% set the default code style
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=2, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red}, % string color
+    xleftmargin=-70pt,
+    xrightmargin=-70pt,
+    breakautoindent=false，
+    numbersep=5pt,
+    breaklines=true
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+\begin{document}
+\input{cover}
+\input{code}
+\end{document}
